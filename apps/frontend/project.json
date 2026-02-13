@@ -83,6 +83,9 @@
         "staticFilePath": "{workspaceRoot}apps/frontend/dist/browser",
         "spa": true
       }
+    },
+    "docker:build": {
+      "dependsOn": ["build", "prune"]
     }
   }
 }
