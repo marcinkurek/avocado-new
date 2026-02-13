@@ -42,3 +42,5 @@ Thumbs.db
 .nx/workspace-data
 
 .angular
+
+libs/backend-api-angular/src

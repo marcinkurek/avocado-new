@@ -4,6 +4,15 @@
   "sourceRoot": "libs/backend-api-angular/src",
   "projectType": "library",
   "tags": [],
-  "// targets": "to see all targets run: nx show project backend-api-angular --web",
-  "targets": {}
+  "targets": {
+    "generate-api": {
+      "executor": "@nx-plugin-openapi/core:generate-api",
+      "options": {
+        "generator": "openapi-tools",
+        "inputSpec": "swagger.json",
+        "outputPath": "libs/backend-api-angular/src"
+      },
+      "outputs": ["{options.outputPath}"]
+    }
+  }
 }
