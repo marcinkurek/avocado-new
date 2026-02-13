@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
-import { NxWelcome } from './nx-welcome';
+import { HelloApi } from './components/hello-api/hello-api';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [App, NxWelcome],
+      imports: [App, HelloApi],
     }).compileComponents();
   });
 
