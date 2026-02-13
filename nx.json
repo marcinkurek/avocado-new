@@ -62,6 +62,13 @@
       "cache": true,
       "dependsOn": ["^build"],
       "inputs": ["production", "^production"]
+    },
+    "@nx-plugin-openapi/core:generate-api": {
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/swagger.json",
+        "{projectRoot}/openapitools.json"
+      ]
     }
   },
   "generators": {

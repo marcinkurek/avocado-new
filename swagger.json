@@ -1,0 +1,22 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/api/app": {
+      "get": {
+        "operationId": "AppController_getData",
+        "parameters": [],
+        "responses": { "200": { "description": "" } },
+        "tags": ["App"]
+      }
+    }
+  },
+  "info": {
+    "title": "Backend API",
+    "description": "The Backend API description",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "tags": [],
+  "servers": [],
+  "components": { "schemas": {} }
+}
