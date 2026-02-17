@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@avocado/backend-api-angular": ["libs/backend-api-angular/src/index.ts"]
+      "@avocado/backend-api-angular": ["libs/backend-api-angular/src/index.ts"],
+      "@avocado/database-api": ["libs/database-api/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
