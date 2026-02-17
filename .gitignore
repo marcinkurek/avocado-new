@@ -43,4 +43,5 @@ Thumbs.db
 
 .angular
 
+.devcontainer/.docker
 libs/backend-api-angular/src
