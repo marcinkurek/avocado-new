@@ -1,6 +1,7 @@
 import { PrismaPg } from '@prisma/adapter-pg';
 
-import { PrismaClient } from '../generated/prisma/client';
+// TODO convert to ESM module
+import { PrismaClient } from '../generated/prisma/client.js';
 
 const connectionString = `${process.env.DATABASE_URL}`;
 
