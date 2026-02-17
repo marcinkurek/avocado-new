@@ -9,45 +9,52 @@ const adapter = new PrismaPg({ connectionString });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
-  const alice = await prisma.user.upsert({
-    where: { email: 'alice@prisma.io' },
-    update: {},
-    create: {
-      email: 'alice@prisma.io',
-      name: 'Alice',
-      posts: {
-        create: {
-          title: 'Check out Prisma with Next.js',
-          content: 'https://www.prisma.io/nextjs',
-          published: true,
+  if ((await prisma.user.count()) === 0) {
+    const alice = await prisma.user.upsert({
+      where: { email: 'alice@prisma.io' },
+      update: {},
+      create: {
+        email: 'alice@prisma.io',
+        name: 'Alice',
+        posts: {
+          create: {
+            title: 'Check out Prisma with Next.js',
+            content: 'https://www.prisma.io/nextjs',
+            published: true,
+          },
         },
       },
-    },
-  });
-  const bob = await prisma.user.upsert({
-    where: { email: 'bob@prisma.io' },
-    update: {},
-    create: {
-      email: 'bob@prisma.io',
-      name: 'Bob',
-      posts: {
-        create: [
-          {
-            title: 'Follow Prisma on Twitter',
-            content: 'https://twitter.com/prisma',
-            published: true,
-          },
-          {
-            title: 'Follow Nexus on Twitter',
-            content: 'https://twitter.com/nexusgql',
-            published: true,
-          },
-        ],
+    });
+
+    const bob = await prisma.user.upsert({
+      where: { email: 'bob@prisma.io' },
+      update: {},
+      create: {
+        email: 'bob@prisma.io',
+        name: 'Bob',
+        posts: {
+          create: [
+            {
+              title: 'Follow Prisma on Twitter',
+              content: 'https://twitter.com/prisma',
+              published: true,
+            },
+            {
+              title: 'Follow Nexus on Twitter',
+              content: 'https://twitter.com/nexusgql',
+              published: true,
+            },
+          ],
+        },
       },
-    },
-  });
-  console.log({ alice, bob });
+    });
+
+    console.log({ alice, bob });
+  } else {
+    console.log({});
+  }
 }
+
 main()
   .then(async () => {
     await prisma.$disconnect();
