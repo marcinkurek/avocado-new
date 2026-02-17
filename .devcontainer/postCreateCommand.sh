@@ -6,6 +6,6 @@ npx nx run backend-api-angular:generate-api
 
 pushd libs/database-api
     npx prisma migrate dev
-    npx prisma db seed
     npx prisma generate
+    npx prisma db seed
 popd
