@@ -16,11 +16,6 @@
 			"version": "latest",
 			"enableNonRootDocker": "true",
 			"moby": "true"
-		},
-		"ghcr.io/devcontainers/features/java:1": {
-			"version": "none",
-			"installMaven": "false",
-			"installGradle": "false"
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
