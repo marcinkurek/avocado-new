@@ -86,6 +86,11 @@
     },
     "docker:build": {
       "dependsOn": ["build", "prune"]
+    },
+    "docker:run": {
+      "options": {
+        "args": ["-p", "4200:4200"]
+      }
     }
   }
 }
