@@ -25,6 +25,9 @@ services:
 
     # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
     # (Adding the "ports" property to this file will not forward from a Codespace.)
+    ports:
+      - "3000:3000"
+      - "4200:4200"
 
   postgres:
     image: postgres:18.1
