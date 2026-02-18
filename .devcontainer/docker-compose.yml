@@ -49,3 +49,5 @@ services:
       - 8000:80
     volumes:
       - ./.docker/pgadmin4/:/var/lib/pgadmin/
+
+network: avocado
