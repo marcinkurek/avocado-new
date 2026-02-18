@@ -5,6 +5,7 @@
     "dbaeumer.vscode-eslint",
     "firsttris.vscode-jest-runner",
     "ms-playwright.playwright",
-    "Prisma.prisma"
+    "Prisma.prisma",
+    "Angular.ng-template"
   ]
 }
