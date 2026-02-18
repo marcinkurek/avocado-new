@@ -1,7 +1,7 @@
 # Build the docker image with `npx nx docker:build frontend`.
 # Tip: Modify "docker:build" options in project.json to change docker build args.
 #
-# Run the container with `nx docker:run frontend -p 4200:4200`.
+# Run the container with `nx docker:run frontend`.
 #
 FROM nginx:alpine
 

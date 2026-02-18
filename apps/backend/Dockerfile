@@ -2,7 +2,7 @@
 # Build the docker image with `npx nx docker:build backend`.
 # Tip: Modify "docker:build" options in project.json to change docker build args.
 #
-# Run the container with `nx docker:run backend -p 3000:3000`.
+# Run the container with `nx docker:run backend`.
 #
 FROM docker.io/node:lts-alpine
 
