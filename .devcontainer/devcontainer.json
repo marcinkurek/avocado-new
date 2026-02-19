@@ -21,6 +21,7 @@
         "esbenp.prettier-vscode",
         "firsttris.vscode-jest-runner",
         "ms-azuretools.vscode-containers",
+        "ms-vscode-remote.vscode-remote-extensionpack",
         "ms-playwright.playwright",
         "nrwl.angular-console",
         "Prisma.prisma"
