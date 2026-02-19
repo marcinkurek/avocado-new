@@ -6,9 +6,11 @@
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
-  // Use this environment variable if you need to bind mount your local source code into a new container.
   "remoteEnv": {
-    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
+    "DOCKER_API_VERSION": "1.43",
+    // Use this environment variable if you need to bind mount your local source code into a new container.
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
+    "NX_DAEMON": "true"
   },
 
   "features": {
