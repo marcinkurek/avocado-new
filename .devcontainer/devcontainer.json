@@ -13,6 +13,21 @@
     "NX_DAEMON": "true"
   },
 
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Angular.ng-template",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "firsttris.vscode-jest-runner",
+        "ms-azuretools.vscode-containers",
+        "ms-playwright.playwright",
+        "nrwl.angular-console",
+        "Prisma.prisma"
+      ]
+    }
+  },
+
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "version": "latest",
