@@ -8,8 +8,7 @@
 
   "remoteEnv": {
     // Use this environment variable if you need to bind mount your local source code into a new container.
-    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}",
-    "NX_DAEMON": "true"
+    "LOCAL_WORKSPACE_FOLDER": "${localWorkspaceFolder}"
   },
 
   "customizations": {
